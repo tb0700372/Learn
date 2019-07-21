@@ -1,0 +1,44 @@
+{
+    "language" : "zh-hans",
+    "author": "Teng",
+    "title": "TENG",
+    "description": "资料整理",
+    "plugins": [
+        "fontsettings","-lunr", "-search", "search-plus", "katex", "splitter", "mermaid-gb3", "puml", "graph", "expandable-chapters-small",
+        "anchors", "anchor-navigation-ex","copy-code-button"
+    ],
+    "pluginsConfig": {
+        "fontsettings": {
+            "theme": "sepia",
+            "family": "sans",
+            "size": 2
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "associatedWithSummary":false,
+            "multipleH1":true,
+            "mode": "float",
+            "showGoTop":true,
+            "float": {
+                "floatIcon": "fa fa-anchor",
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        }
+    },
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    }
+}
