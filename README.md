@@ -1,3 +1,8 @@
 # My Awesome Book
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Link
+[题库](https://www.examcoo.com/index/ku)
+[Excel模板网盘](http://15161218108.ys168.com/)
+[VBA程序开发汇总](http://club.excelhome.net/thread-385491-1-1.html)
+[Gitbook书籍列表](https://legacy.gitbook.com/@wizardforcel)
+[FileReader](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader)

@@ -1,0 +1,39 @@
+.gitbook-link {
+  display: none !important;
+}
+
+
+/* 以下功能块是为了重新调整目录缩进 */
+.book-summary .summary :not(i){
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+margin-left: 0px !important;
+margin-right: 0px !important;
+
+padding-top: 0px!important;
+padding-bottom: 0px!important;
+padding-left: 3px !important;
+padding-right: 0px!important;
+
+}
+.book-summary .summary a{
+  padding-left: 11px !important;
+}
+.summary i{
+width: 12px!important;
+height: 19px!important;
+margin: 0px!important;
+padding: 0px!important;
+left: 0px!important;
+top: 0px!important;
+}
+
+
+/* 调整页面高度, 防止右滚动栏异常出现 */
+body,html{
+  height: calc(100% - 3px);
+}
+/* 调整内容高度, 避免底部出现空白 */
+.book-summary,.book-body{
+  height: calc(100% + 6px);
+}

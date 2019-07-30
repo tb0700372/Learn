@@ -5,14 +5,36 @@
     "description": "资料整理",
     "plugins": [
         "fontsettings","-lunr", "-search", "search-plus", "katex", "splitter", "mermaid-gb3", "puml", "graph", "expandable-chapters-small",
-        "anchors", "anchor-navigation-ex","copy-code-button"
+        "anchors", "anchor-navigation-ex","code","livereload","-sharing","sharing-plus","accordion"
     ],
     "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright": "",
+            "modify_label": "修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss",
+            "REM": "显示文件的修改事件，包括一些版权声明"
+        }, 
         "fontsettings": {
             "theme": "sepia",
             "family": "sans",
-            "size": 2
+            "size": 9,
+            "REM": "显示样式以及文字大小的主题"
         },
+        "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true,
+            "REM": "<!-- toc -->中放代码注释。插入content深度最多为maxdepth的标题。排除第一个h1。"
+        },
+        "sharing": {
+            "REM": "默认的一些分享的展示与隐藏，true为展示，false为隐藏",
+            "facebook": false,
+            "twitter": false,
+            "weibo": true,
+            "qq": true,
+        "all": [
+            "douban", "google", "instapaper", "linkedin", "twitter", "messenger", "qzone", "viber", "whatsapp"
+           ]
+       },
         "anchor-navigation-ex": {
             "showLevel": false,
             "associatedWithSummary":false,
