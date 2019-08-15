@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tab</title>
+    <style type="text/css">
+        #tab {
+            width: 95%;
+            margin: 0 auto;
+            box-shadow: 5px 5px 5px #888888;
+        }
+
+        #tab h3 {
+            margin: 0px 1px 0px 1px;
+            padding: 0px 5px 0px 5px;
+            font-size: 11px;
+            float: left;
+            right: 5px;
+            width: auto;
+            height: 18px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        #tab div {
+            clear: both;
+            height: auto;
+            font-size: 14px;
+            padding: 20px 0px 0px 20px;
+            display: none;
+        }
+
+        #tab h3.active {
+            background: #F5F5DC;
+        }
+
+        #tab div.content {
+            display: block;
+            background: #F5F5DC;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var oTab = document.getElementById("tab");
+            var aH3 = oTab.getElementsByTagName("h3");
+            var aDiv = oTab.getElementsByTagName("div");
+            for (var i = 0; i < aH3.length; i++) {
+                aH3[i].index = i;
+                aH3[i].onclick = function () {
+                    for (var i = 0; i < aH3.length; i++) {
+                        aH3[i].className = "";
+                        aDiv[i].style.display = "none";
+                        aDiv[this.index].className = "";
+                        aDiv[this.index].className = "content";
+                    }
+                    this.className = "active";
+                    aDiv[this.index].style.display = "block";
+                };
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div id="tab">
+        <h3 class="active">C++</h3>
+        <h3>C#</h3>
+        <h3>Python</h3>
+        <h3>PHP</h3>
+
+        <div class="content">
+            <p>C++</p>
+            <code>asdasdad</code>
+            <p>aa</p>
+            教育内容<br /><br /><br /><br /><br /><br /><br /><br />
+            <p>aaa</p>
+        </div>
+        <div>C#</div>
+        <div>Python</div>
+        <div>PHP</div>
+    </div>
+</body>
+
+</html>
